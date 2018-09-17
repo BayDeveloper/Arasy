@@ -13,8 +13,16 @@
   <div class="card text-white bg-primary mb-3">
   <div class="card-header"><h5><span><b>A. Identitas Pelanggan<b><span><h5></div>
   <div class="card-body">
-    <h5 class="card-title">Primary card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <form>
+      <div class="row">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="First name">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Last name">
+        </div>
+      </div>
+    </form>
   </div>
 </div>
 <div class="card text-white bg-danger mb-3">
