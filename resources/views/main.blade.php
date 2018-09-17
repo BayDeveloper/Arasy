@@ -17,9 +17,9 @@
 
       .dropdown-submenu {
           position: relative;
-      }
+          }
 
-      .dropdown-submenu>.dropdown-menu {
+      .dropdown-submenu .dropdown-menu {
           top: 0;
           left: 100%;
           margin-top: -6px;
@@ -29,11 +29,11 @@
           border-radius: 0 6px 6px 6px;
       }
 
-      .dropdown-submenu:hover>.dropdown-menu {
+      .dropdown-submenu:hover .dropdown-menu {
           display: block;
       }
 
-      .dropdown-submenu>a:after {
+      .dropdown-submenu a:after {
           display: block;
           content: " ";
           float: right;
@@ -47,7 +47,7 @@
           margin-right: -10px;
       }
 
-      .dropdown-submenu:hover>a:after {
+      .dropdown-submenu:hover a:after {
           border-left-color: #fff;
       }
 
@@ -55,7 +55,7 @@
           float: none;
       }
 
-      .dropdown-submenu.pull-left>.dropdown-menu {
+      .dropdown-submenu.pull-left .dropdown-menu {
           left: -100%;
           margin-left: 10px;
           -webkit-border-radius: 6px 0 6px 6px;
@@ -235,7 +235,22 @@
         e.preventDefault();
       });
     });
-    </script>
 
+    $('.dropdown-menu a.dropdown-toggle').on('click', function(e) {
+    if (!$(this).next().hasClass('show')) {
+      $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
+    }
+    var $subMenu = $(this).next(".dropdown-menu");
+    $subMenu.toggleClass('show');
+
+
+    $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function(e) {
+      $('.dropdown-submenu .show').removeClass("show");
+    });
+
+    return false;
+    });
+
+    </script>
   </body>
 </html>
