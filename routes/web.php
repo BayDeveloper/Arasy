@@ -10,7 +10,10 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('tcnewtrip', 'PagesController@getTcnewtrip');
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('contact', 'PagesController@getContact');
+
+Route::get('about', 'PagesController@getabout');
+
+Route::get('/', 'PagesController@getIndex');
