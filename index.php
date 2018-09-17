@@ -1,3 +1,5 @@
 <?php
-header("refresh: 0; https://arasy.mytriponizer.com/Arasy/public/");
+header("refresh: 5; https://arasy.mytriponizer.com/Arasy/public/");
 ?>
+
+echo "Redirect in 5 sec" 
