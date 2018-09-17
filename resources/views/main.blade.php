@@ -35,152 +35,52 @@
 
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
-      <a class="navbar-brand" href="/">LOGO</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown link
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Submenu</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Submenu action</a></li>
+                  <li><a class="dropdown-item" href="#">Another submenu action</a></li>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item active dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Blogs
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Article</a>
-              <a class="dropdown-item" href="#">News</a>
-              <a class="dropdown-item" href="#">Forum</a>
-            </div>
-          </li>
-          <li class="nav-item active dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Department
-            </a>
-            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
-                <li class="dropdown-submenu">
-                  <a  class="dropdown-item" tabindex="-1" href="#">Trip Consultant</a>
-                  <ul class="dropdown-menu">
-                    <li class="dropdown-submenu">
-                      <a class="dropdown-item" href="#">Form Consultant</a>
-                      <ul class="dropdown-menu">
-                          <li class="dropdown-item"><a href="tcnewtrip">Request Pelanggan</a></li>
-                          <li class="dropdown-item"><a href="#">Request ...</a></li>
-                      </ul>
-                    </li>
-                    <li class="dropdown-submenu">
-                      <a class="dropdown-item" href="#">Job Progress</a>
-                      <ul class="dropdown-menu">
-                          <li class="dropdown-item"><a href="tcnewtrip">List Progress</a></li>
-                          <li class="dropdown-item"><a href="tcnewtrip">New Progress</a></li>
-                          <li class="dropdown-item"><a href="tcnewtrip">On Progress</a></li>
-                          <li class="dropdown-item"><a href="tcnewtrip">Success</a></li>
-                      </ul>
-                    </li>
-                    <li class="dropdown-item"><a href="#">Other ...</a></li>
-                  </ul>
-                </li>
-                <li class="dropdown-submenu">
-                  <a  class="dropdown-item" tabindex="-1" href="#">Trip Designer</a>
-                  <ul class="dropdown-menu">
-                    <li class="dropdown-submenu">
-                      <a class="dropdown-item" href="#">Form Designer</a>
-                      <ul class="dropdown-menu">
-                          <li class="dropdown-item"><a href="#">Request Product</a></li>
-                          <li class="dropdown-item"><a href="#">Request ...</a></li>
-                      </ul>
-                    </li>
-                    <li class="dropdown-item"><a href="#">Other ...</a></li>
-                  </ul>
-                </li>
-                <li class="dropdown-submenu">
-                  <a  class="dropdown-item" tabindex="-1" href="#">Trip Mate</a>
-                  <ul class="dropdown-menu">
-                    <li class="dropdown-submenu">
-                      <a class="dropdown-item" href="#">Form Mate</a>
-                      <ul class="dropdown-menu">
-                          <li class="dropdown-item"><a href="#">Request Utility</a></li>
-                          <li class="dropdown-item"><a href="#">Request ...</a></li>
-                      </ul>
-                    </li>
-                    <li class="dropdown-item"><a href="#">Other ...</a></li>
-                  </ul>
-                </li>
-                <li class="dropdown-submenu">
-                  <a  class="dropdown-item" tabindex="-1" href="#">Development</a>
-                  <ul class="dropdown-menu">
-                    <li class="dropdown-submenu">
-                      <a class="dropdown-item" href="#">Form Development</a>
-                      <ul class="dropdown-menu">
-                          <li class="dropdown-item"><a href="#">From Survey</a></li>
-                          <li class="dropdown-item"><a href="#">Request ...</a></li>
-                      </ul>
-                    </li>
-                    <li class="dropdown-item"><a href="#">Other ...</a></li>
-                  </ul>
-                </li>
-                <li class="dropdown-submenu">
-                  <a  class="dropdown-item" tabindex="-1" href="#">Trip Promotion</a>
-                  <ul class="dropdown-menu">
-                    <li class="dropdown-submenu">
-                      <a class="dropdown-item" href="#">Form Proposal</a>
-                      <ul class="dropdown-menu">
-                          <li class="dropdown-item"><a href="#">Proposal</a></li>
-                          <li class="dropdown-item"><a href="#">Request ...</a></li>
-                      </ul>
-                    </li>
-                    <li class="dropdown-item"><a href="#">Other ...</a></li>
-                  </ul>
-                </li>
-                <li class="dropdown-divider"></li>
-                <li class="dropdown-submenu">
-                  <a  class="dropdown-item" tabindex="-1" href="#">Some other action</a>
-                  <ul class="dropdown-menu">
-                    <li class="dropdown-item"><a tabindex="-1" href="#">Second level</a></li>
-                    <li class="dropdown-submenu">
-                      <a class="dropdown-item" href="#">Even More..</a>
-                      <ul class="dropdown-menu">
-                          <li class="dropdown-item"><a href="#">3rd level</a></li>
-                            <li class="dropdown-submenu"><a class="dropdown-item" href="#">another level</a>
-                            <ul class="dropdown-menu">
-                                <li class="dropdown-item"><a href="#">4th level</a></li>
-                                <li class="dropdown-item"><a href="#">4th level</a></li>
-                                <li class="dropdown-item"><a href="#">4th level</a></li>
-                            </ul>
-                          </li>
-                            <li class="dropdown-item"><a href="#">3rd level</a></li>
-                      </ul>
-                    </li>
-                    <li class="dropdown-item"><a href="#">Second level</a></li>
-                    <li class="dropdown-item"><a href="#">Second level</a></li>
-                  </ul>
-                </li>
-              </ul>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="about">About <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="contact">Contact <span class="sr-only">(current)</span></a>
+
+                  <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Subsubmenu</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Subsubmenu action</a></li>
+                      <li><a class="dropdown-item" href="#">Another subsubmenu action</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Second subsubmenu</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Subsubmenu action</a></li>
+                      <li><a class="dropdown-item" href="#">Another subsubmenu action</a></li>
+                    </ul>
+                  </li>
+
+
+
+                </ul>
+              </li>
+            </ul>
           </li>
         </ul>
-      <li class="navbar-nav dropdown">
-        <a class="btn btn-danger dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Account
-        </a>
-        <ul class="dropdown-menu dropdown-menu-right">
-          <!-- Dropdown menu links -->
-          <li class="dropdown-item"><a href="#">Setting</a></li>
-          <li class="dropdown-item"><a href="#">Sign Out</a></li>
-        </ul>
-      </li>
-    </div>
-  </div>
-
-</nav>
+      </div>
+    </nav>
 
 <div class="jumbotron">
   <h1 class="display-4">Main Design</h1>
