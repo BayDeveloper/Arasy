@@ -15,52 +15,22 @@
     <title>Arasy</title>
     <style>
 
-      .dropdown-submenu {
-          position: relative;
+    .dropdown-submenu {
+      position: relative;
       }
 
-      .dropdown-submenu .dropdown-menu {
-          top: 0;
-          left: 100%;
-          margin-top: -6px;
-          margin-left: -1px;
-          -webkit-border-radius: 0 6px 6px 6px;
-          -moz-border-radius: 0 6px 6px;
-          border-radius: 0 6px 6px 6px;
+    .dropdown-submenu a::after {
+      transform: rotate(-90deg);
+      position: absolute;
+      right: 6px;
+      top: .8em;
       }
 
-      .dropdown-submenu:hover .dropdown-menu {
-          display: block;
-      }
-
-      .dropdown-submenu a:after {
-          display: block;
-          content: " ";
-          float: right;
-          width: 0;
-          height: 0;
-          border-color: transparent;
-          border-style: solid;
-          border-width: 5px 0 5px 5px;
-          border-left-color: #ccc;
-          margin-top: 5px;
-          margin-right: -10px;
-      }
-
-      .dropdown-submenu:hover a:after {
-          border-left-color: #fff;
-      }
-
-      .dropdown-submenu.pull-left {
-          float: none;
-      }
-
-      .dropdown-submenu.pull-left .dropdown-menu {
-          left: -100%;
-          margin-left: 10px;
-          -webkit-border-radius: 6px 0 6px 6px;
-          -moz-border-radius: 6px 0 6px 6px;
-          border-radius: 6px 0 6px 6px;
+    .dropdown-submenu .dropdown-menu {
+      top: 0;
+      left: 100%;
+      margin-left: .1rem;
+      margin-right: .1rem;
       }
     </style>
 
@@ -228,13 +198,21 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
     <script>
-    $(document).ready(function(){
-      $('.dropdown-submenu a.test').on("click", function(e){
-        $(this).next('ul').toggle();
-        e.stopPropagation();
-        e.preventDefault();
+      $('.dropdown-menu a.dropdown-toggle').on('click', function(e) {
+        if (!$(this).next().hasClass('show')) {
+          $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
+        }
+        var $subMenu = $(this).next(".dropdown-menu");
+        $subMenu.toggleClass('show');
+
+
+        $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function(e) {
+          $('.dropdown-submenu .show').removeClass("show");
+        });
+
+
+        return false;
       });
-    });
     </script>
 
   </body>
