@@ -32,7 +32,7 @@ class PagesController extends Controller {
   }
 
   public function getTcnewtrip(){
-    return view('pages.form.tripconsultan.requestpelanggan');
+    return view('pages/form/tripconsultan/requestpelanggan');
   }
 }
 
