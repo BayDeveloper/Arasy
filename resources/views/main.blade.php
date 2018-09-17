@@ -14,24 +14,23 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <title>Arasy</title>
     <style>
-
     .dropdown-submenu {
       position: relative;
-      }
+    }
 
     .dropdown-submenu a::after {
       transform: rotate(-90deg);
       position: absolute;
       right: 6px;
       top: .8em;
-      }
+    }
 
     .dropdown-submenu .dropdown-menu {
       top: 0;
       left: 100%;
       margin-left: .1rem;
       margin-right: .1rem;
-      }
+    }
     </style>
 
   </head>
@@ -61,7 +60,7 @@
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Department
             </a>
-            <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
                 <li class="dropdown-submenu">
                   <a  class="dropdown-item" tabindex="-1" href="#">Trip Consultant</a>
                   <ul class="dropdown-menu">
