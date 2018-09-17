@@ -27,11 +27,13 @@
       <div class="form-group row">
         <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
         <div class="col-sm-10">
-          <div class="col">
-            <input type="text" class="form-control" placeholder="First name">
-          </div>
-          <div class="col">
-            <input type="text" class="form-control" placeholder="Last name">
+          <div class="row">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="First name">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Last name">
+            </div>
           </div>
         </div>
       </div>
