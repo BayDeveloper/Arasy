@@ -43,9 +43,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
+
           <li class="nav-item active">
             <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
           </li>
@@ -59,35 +57,112 @@
               <a class="dropdown-item" href="#">Forum</a>
             </div>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Dropdown link
+          <li class="nav-item active dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Department
             </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Submenu</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Submenu action</a></li>
-                  <li><a class="dropdown-item" href="#">Another submenu action</a></li>
-
-                  <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Subsubmenu</a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Subsubmenu action</a></li>
-                      <li><a class="dropdown-item" href="#">Another subsubmenu action</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Second subsubmenu</a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Subsubmenu action</a></li>
-                      <li><a class="dropdown-item" href="#">Another subsubmenu action</a></li>
-                    </ul>
-                  </li>
-
-                </ul>
-              </li>
-            </ul>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                 <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">
+                  <a  class="dropdown-item" tabindex="-1" href="#">Trip Consultant</a>
+                  <ul class="dropdown-menu">
+                     <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">
+                      <a class="dropdown-item" href="#">Form Consultant</a>
+                      <ul class="dropdown-menu">
+                          <li class="dropdown-item"><a href="tcnewtrip">Request Pelanggan</a></li>
+                          <li class="dropdown-item"><a href="#">Request ...</a></li>
+                      </ul>
+                    </li>
+                     <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">
+                      <a class="dropdown-item" href="#">Job Progress</a>
+                      <ul class="dropdown-menu">
+                          <li class="dropdown-item"><a href="tcnewtrip">List Progress</a></li>
+                          <li class="dropdown-item"><a href="tcnewtrip">New Progress</a></li>
+                          <li class="dropdown-item"><a href="tcnewtrip">On Progress</a></li>
+                          <li class="dropdown-item"><a href="tcnewtrip">Success</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-item"><a href="#">Other ...</a></li>
+                  </ul>
+                </li>
+                 <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">
+                  <a  class="dropdown-item" tabindex="-1" href="#">Trip Designer</a>
+                  <ul class="dropdown-menu">
+                     <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">
+                      <a class="dropdown-item" href="#">Form Designer</a>
+                      <ul class="dropdown-menu">
+                          <li class="dropdown-item"><a href="#">Request Product</a></li>
+                          <li class="dropdown-item"><a href="#">Request ...</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-item"><a href="#">Other ...</a></li>
+                  </ul>
+                </li>
+                 <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">
+                  <a  class="dropdown-item" tabindex="-1" href="#">Trip Mate</a>
+                  <ul class="dropdown-menu">
+                     <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">
+                      <a class="dropdown-item" href="#">Form Mate</a>
+                      <ul class="dropdown-menu">
+                          <li class="dropdown-item"><a href="#">Request Utility</a></li>
+                          <li class="dropdown-item"><a href="#">Request ...</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-item"><a href="#">Other ...</a></li>
+                  </ul>
+                </li>
+                 <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">
+                  <a  class="dropdown-item" tabindex="-1" href="#">Development</a>
+                  <ul class="dropdown-menu">
+                     <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">
+                      <a class="dropdown-item" href="#">Form Development</a>
+                      <ul class="dropdown-menu">
+                          <li class="dropdown-item"><a href="#">From Survey</a></li>
+                          <li class="dropdown-item"><a href="#">Request ...</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-item"><a href="#">Other ...</a></li>
+                  </ul>
+                </li>
+                 <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">
+                  <a  class="dropdown-item" tabindex="-1" href="#">Trip Promotion</a>
+                  <ul class="dropdown-menu">
+                     <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">
+                      <a class="dropdown-item" href="#">Form Proposal</a>
+                      <ul class="dropdown-menu">
+                          <li class="dropdown-item"><a href="#">Proposal</a></li>
+                          <li class="dropdown-item"><a href="#">Request ...</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-item"><a href="#">Other ...</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-divider"></li>
+                 <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">
+                  <a  class="dropdown-item" tabindex="-1" href="#">Some other action</a>
+                  <ul class="dropdown-menu">
+                    <li class="dropdown-item"><a tabindex="-1" href="#">Second level</a></li>
+                     <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">
+                      <a class="dropdown-item" href="#">Even More..</a>
+                      <ul class="dropdown-menu">
+                          <li class="dropdown-item"><a href="#">3rd level</a></li>
+                             <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#"><a class="dropdown-item" href="#">another level</a>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-item"><a href="#">4th level</a></li>
+                                <li class="dropdown-item"><a href="#">4th level</a></li>
+                                <li class="dropdown-item"><a href="#">4th level</a></li>
+                            </ul>
+                          </li>
+                            <li class="dropdown-item"><a href="#">3rd level</a></li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-item"><a href="#">Second level</a></li>
+                    <li class="dropdown-item"><a href="#">Second level</a></li>
+                  </ul>
+                </li>
+              </ul>
           </li>
+
+          
         </ul>
       </div>
     </nav>
