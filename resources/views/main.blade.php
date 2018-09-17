@@ -73,10 +73,10 @@
                   </li>
                   <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Jon Progress</a>
                   <ul class="dropdown-menu">
-                    <li class="dropdown-item"><a href="#">List Progress</a></li>
-                    <li class="dropdown-item"><a href="#">New Progress</a></li>
-                    <li class="dropdown-item"><a href="#">On Progress</a></li>
-                    <li class="dropdown-item"><a href="#">Success</a></li>
+                    <li><a class="dropdown-item" href="#">List Progress</a></li>
+                    <li><a class="dropdown-item" href="#">New Progress</a></li>
+                    <li><a class="dropdown-item" href="#">On Progress</a></li>
+                    <li><a class="dropdown-item" href="#">Success</a></li>
                   </ul>
                 </li>
 
