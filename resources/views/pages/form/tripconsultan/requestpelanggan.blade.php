@@ -19,8 +19,7 @@
             <div class="row">
               <div class="col">
                 <input type="text" class="form-control" placeholder="First name">
-              </div>
-              <div class="col">
+                <hr class="my-1">
                 <input type="text" class="form-control" placeholder="Last name">
               </div>
             </div>
@@ -30,7 +29,7 @@
         <label for="ID" class="col-sm-2 col-form-label">Identitas Pelanggan</label>
         <div class="col-sm-10">
             <div class="row">
-              <div class="col-6">
+              <div class="col">
                 <input type="text" class="form-control" placeholder="NIP/NIK">
               </div>
             </div>
@@ -40,7 +39,7 @@
         <label for="Contact" class="col-sm-2 col-form-label">Kontak Pelanggan</label>
         <div class="col-sm-10">
             <div class="row">
-              <div class="col-6">
+              <div class="col">
                 <input type="text" class="form-control" placeholder="Nomor Kontak">
               </div>
             </div>
@@ -77,7 +76,7 @@
       <label for="Destinasi" class="col-sm-2 col-form-label">Destinasi/Tujuan</label>
       <div class="col-sm-10">
           <div class="row">
-            <div class="col-6">
+            <div class="col">
               <input type="text" class="form-control" placeholder="Daerah/Lokasi">
             </div>
           </div>
@@ -87,7 +86,7 @@
       <label for="takeway" class="col-sm-2 col-form-label">Keberangkatan</label>
       <div class="col-sm-10">
           <div class="row">
-            <div class="col-6">
+            <div class="col">
               <input type="text" class="form-control" placeholder="Jam Berangkat">
             </div>
           </div>
@@ -97,7 +96,7 @@
       <label for="Durasi" class="col-sm-2 col-form-label">Durasi Trip</label>
       <div class="col-sm-10">
           <div class="row">
-            <div class="col-6">
+            <div class="col">
               <input type="text" class="form-control" placeholder="Jumlah Hari">
             </div>
           </div>
@@ -107,7 +106,7 @@
       <label for="Jenis" class="col-sm-2 col-form-label">Jenis Wisata</label>
       <div class="col-sm-10">
           <div class="row">
-            <div class="col-6">
+            <div class="col">
               <input type="text" class="form-control" placeholder="Tujuan Wisata">
             </div>
           </div>
@@ -252,7 +251,7 @@
       <label for="ID" class="col-sm-2 col-form-label">Segment</label>
       <div class="col-sm-10">
           <div class="row">
-            <div class="col-6">
+            <div class="col">
               <input type="text" class="form-control">
             </div>
           </div>
@@ -262,7 +261,7 @@
       <label for="ID" class="col-sm-2 col-form-label">Target</label>
       <div class="col-sm-10">
           <div class="row">
-            <div class="col-6">
+            <div class="col">
               <input type="text" class="form-control">
             </div>
           </div>
@@ -272,7 +271,7 @@
       <label for="ID" class="col-sm-2 col-form-label">Position</label>
       <div class="col-sm-10">
           <div class="row">
-            <div class="col-6">
+            <div class="col">
               <input type="text" class="form-control">
             </div>
           </div>
