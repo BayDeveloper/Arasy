@@ -1,6 +1,7 @@
 @extends('main')
 
 @section('content')
+
 <form>
   <div class="card-group">
     <div class="card">
@@ -45,6 +46,7 @@
             </div>
         </div>
       </div>
+      <!-- change select box with select multi -->
       <div class="form-group row">
         <div class="col-sm-2">Tipe Produk</div>
         <div class="col-sm-10">
