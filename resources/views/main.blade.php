@@ -85,6 +85,16 @@
             </ul>
           </li>
         </ul>
+        <li class="navbar-nav dropdown">
+          <a class="btn btn-danger dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Account
+          </a>
+          <ul class="dropdown-menu dropdown-menu-right">
+            <!-- Dropdown menu links -->
+            <li class="dropdown-item"><a href="#">Setting</a></li>
+            <li class="dropdown-item"><a href="#">Sign Out</a></li>
+          </ul>
+        </li>
       </div>
     </nav>
 
