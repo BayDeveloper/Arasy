@@ -46,7 +46,7 @@
             </div>
         </div>
       </div>
-      <!-- change select box with select multi -->
+      <!-- /.form-group -->
       <div class="form-group row">
         <div class="col-sm-2">Tipe Produk</div>
         <div class="col-sm-10">
@@ -115,123 +115,63 @@
       </div>
     </div>
     <div class="form-group row">
-      <div class="col-sm-2">Akomodasi</div>
+      <label for="Akomodasi" class="col-sm-2 col-form-label">Akomodasi</label>
       <div class="col-sm-10">
-        <div class="form-check">
           <div class="row">
-            <div class="col-2">
-              <input class="form-check-input" type="checkbox" id="gridCheck1">
-              <label class="form-check-label" for="gridCheck1">
-                Hotel
-              </label>
-            </div>
-            <div class="col-2">
-              <input class="form-check-input" type="checkbox" id="gridCheck1">
-              <label class="form-check-label" for="gridCheck1">
-                Resort
-              </label>
-            </div>
-            <div class="col-2">
-              <input class="form-check-input" type="checkbox" id="gridCheck1">
-              <label class="form-check-label" for="gridCheck1">
-                Cottage
-              </label>
-            </div>
-            <div class="col-2">
-              <input class="form-check-input" type="checkbox" id="gridCheck1">
-              <label class="form-check-label" for="gridCheck1">
-                ...
-              </label>
+            <div class="col">
+              <select class="select2-akomodasi js-states form-control" multiple="multiple" style="width: 100%;">
+                <option>Hotel</option>
+                <option>Resort</option>
+                <option>Cottage</option>
+                <option>Other</option>
+              </select>
             </div>
           </div>
-        </div>
       </div>
     </div>
     <div class="form-group row">
-      <div class="col-sm-2">Transportasi</div>
+      <label for="Transportasi" class="col-sm-2 col-form-label">Transportasi</label>
       <div class="col-sm-10">
-        <div class="form-check">
           <div class="row">
-            <div class="col-2">
-              <input class="form-check-input" type="checkbox" id="gridCheck1">
-              <label class="form-check-label" for="gridCheck1">
-                Bus
-              </label>
-            </div>
-            <div class="col-2">
-              <input class="form-check-input" type="checkbox" id="gridCheck1">
-              <label class="form-check-label" for="gridCheck1">
-                Mini Bus
-              </label>
-            </div>
-            <div class="col-2">
-              <input class="form-check-input" type="checkbox" id="gridCheck1">
-              <label class="form-check-label" for="gridCheck1">
-                Private Car
-              </label>
-            </div>
-            <div class="col-2">
-              <input class="form-check-input" type="checkbox" id="gridCheck1">
-              <label class="form-check-label" for="gridCheck1">
-                ...
-              </label>
+            <div class="col">
+              <select class="select2-transportasi js-states form-control" multiple="multiple" style="width: 100%;">
+                <option>Bus</option>
+                <option>Mini Bus</option>
+                <option>Private Car</option>
+                <option>Other</option>
+              </select>
             </div>
           </div>
-        </div>
+      </div>
+    </div>
+
+
+    <div class="form-group row">
+      <label for="TripTools" class="col-sm-2 col-form-label">Trip Tools</label>
+      <div class="col-sm-10">
+          <div class="row">
+            <div class="col">
+              <select class="select2-triptools js-states form-control" multiple="multiple" style="width: 100%;">
+                <option>LogBook</option>
+                <option>Uniform</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
       </div>
     </div>
     <div class="form-group row">
-      <div class="col-sm-2">Trip Tools</div>
+      <label for="Dokumentasi" class="col-sm-2 col-form-label">Dokumentasi</label>
       <div class="col-sm-10">
-        <div class="form-check">
           <div class="row">
-            <div class="col-2">
-              <input class="form-check-input" type="checkbox" id="gridCheck1">
-              <label class="form-check-label" for="gridCheck1">
-                LogBook
-              </label>
-            </div>
-            <div class="col-2">
-              <input class="form-check-input" type="checkbox" id="gridCheck1">
-              <label class="form-check-label" for="gridCheck1">
-                Uniform
-              </label>
-            </div>
-            <div class="col-2">
-              <input class="form-check-input" type="checkbox" id="gridCheck1">
-              <label class="form-check-label" for="gridCheck1">
-                ...
-              </label>
+            <div class="col">
+              <select class="select2-dokumentasi js-states form-control" multiple="multiple" style="width: 100%;">
+                <option>After Movie</option>
+                <option>Dvd Album</option>
+                <option>Other</option>
+              </select>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-    <div class="form-group row">
-      <div class="col-sm-2">Dokumentasi</div>
-      <div class="col-sm-10">
-        <div class="form-check">
-          <div class="row">
-            <div class="col-2">
-              <input class="form-check-input" type="checkbox" id="gridCheck1">
-              <label class="form-check-label" for="gridCheck1">
-                After Movie
-              </label>
-            </div>
-            <div class="col-2">
-              <input class="form-check-input" type="checkbox" id="gridCheck1">
-              <label class="form-check-label" for="gridCheck1">
-                Dvd Album
-              </label>
-            </div>
-            <div class="col-2">
-              <input class="form-check-input" type="checkbox" id="gridCheck1">
-              <label class="form-check-label" for="gridCheck1">
-                ...
-              </label>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </div>
@@ -282,4 +222,21 @@
   </div>
 </div>
 </form>
+
+Address:<br>
+<textarea id="myTextarea">
+342 Alvin Road
+Ducksburg</textarea>
+
+<p>Click the button to get the content of the text area.</p>
+
+<button type="button" onclick="myFunction()">Try it</button>
+<p id="demo"></p>
+
+<div class="row">
+  <div class="col">
+    <input type="text" id="other-akomodasi" class="form-control" placeholder="other">
+  </div>
+</div>
+
 @endsection

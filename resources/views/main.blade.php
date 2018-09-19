@@ -7,11 +7,16 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+    <!-- Select2 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+
     <title>Arasy</title>
     <style>
     .dropdown-submenu {
@@ -128,6 +133,58 @@
 
         return false;
       });
+
+      function myFunction() {
+        var x = document.getElementById("myTextarea").value;
+        document.getElementById("demo").innerHTML = x;
+      };
+
+      function text_other() {
+        var z = document.createElement("TEXTAREA");
+        var t = document.createTextNode("At w3schools.com you will learn how to make a website.");
+        z.appendChild(t);
+        document.body.appendChild(z);
+      };
+
+
+      // Select2 begin
+      $(document).ready(function() {
+        $(".select2-akomodasi").select2({
+            placeholder: "Pilih Akomodasi"
+        });
+        $(".select2-transportasi").select2({
+            placeholder: "Pilih Transportasi"
+        });
+        $(".select2-triptools").select2({
+            placeholder: "Pilih Trip Tools"
+        });
+        $(".select2-dokumentasi").select2({
+            placeholder: "Pilih Dokumentasi"
+        });
+        $('.select2-akomodasi').on('change', function() {
+          var data = $(".select2-akomodasi option:selected").text();
+          if (data == 'Other'){
+            text_other();
+          }
+          $("#other-akomodasi").val(data);
+          //text_other();
+        });
+        $('.select2-transportasi').on('change', function() {
+          var data = $(".select2-transportasi option:selected").text();
+          $("#other-transportasi").val(data);
+        });
+        $('.select2-triptools').on('change', function() {
+          var data = $(".select2-triptools option:selected").text();
+          $("#other-triptools").val(data);
+        });
+        $('.select2-dokumentasi').on('change', function() {
+          var data = $(".select2-dokumentasi option:selected").text();
+          $("#other-dokumentasi").val(data);
+        });
+      });
+
+      //Select2 End
+
     </script>
 
   </body>
