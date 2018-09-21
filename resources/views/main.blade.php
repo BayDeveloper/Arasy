@@ -118,19 +118,16 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
     <script>
+      var ioa = 0;
       $('.dropdown-menu a.dropdown-toggle').on('click', function(e) {
         if (!$(this).next().hasClass('show')) {
           $(this).parents('.dropdown-menu').first().find('.show').removeClass("show");
         }
         var $subMenu = $(this).next(".dropdown-menu");
         $subMenu.toggleClass('show');
-
-
         $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function(e) {
           $('.dropdown-submenu .show').removeClass("show");
         });
-
-
         return false;
       });
 
@@ -139,16 +136,9 @@
         document.getElementById("demo").innerHTML = x;
       };
 
-      function text_other() {
-        var z = document.createElement("TEXTAREA");
-        var t = document.createTextNode("At w3schools.com you will learn how to make a website.");
-        z.appendChild(t);
-        document.body.appendChild(z);
-      };
-
-
       // Select2 begin
       $(document).ready(function() {
+
         $(".select2-akomodasi").select2({
             placeholder: "Pilih Akomodasi"
         });
@@ -161,29 +151,71 @@
         $(".select2-dokumentasi").select2({
             placeholder: "Pilih Dokumentasi"
         });
+        //check condition other akomodasi
         $('.select2-akomodasi').on('change', function() {
-          var data = $(".select2-akomodasi option:selected").text();
-          if (data == 'Other'){
+          data = $(".select2-akomodasi").val();
+          if (typeof data !== 'undefined' && data.length > 0) {
+            // the array is defined and has at least one element
+            //console.log("data !null");
+            for (var c in data)
+            {
+               //console.log("row " + c);
+               for (var j in data[c])
+                 {
+                   //console.log(" " + data[c][j]);
+                   if(data[c][j] == '4'){
+                     ioa = 1;
+                     text_other();
+                   }else{
+                     ioa = 0;
+                     text_other();
+                   }
+                 }
+            }
+          }else{
+            //console.log("data null");
+            ioa = 0;
             text_other();
           }
-          $("#other-akomodasi").val(data);
-          //text_other();
+
+          $("#oa").val(data);
+          return data;
         });
+        //check condition other transportasi
         $('.select2-transportasi').on('change', function() {
           var data = $(".select2-transportasi option:selected").text();
           $("#other-transportasi").val(data);
         });
+        //check condition other triptools
         $('.select2-triptools').on('change', function() {
           var data = $(".select2-triptools option:selected").text();
           $("#other-triptools").val(data);
         });
+        //check condition other dokumentasi
         $('.select2-dokumentasi').on('change', function() {
           var data = $(".select2-dokumentasi option:selected").text();
           $("#other-dokumentasi").val(data);
         });
-      });
+    });
+    //Select2 End
 
-      //Select2 End
+    //Add Textbox other Begin
+    function text_other() {
+      var count = $("#other-akomodasi").children().length;
+      if(ioa == 1){
+        if(count != 1){
+          var text_akomodasi = document.createElement("INPUT");
+          $("#other-akomodasi").append(text_akomodasi);     // Append new elements
+          alert(count);
+          ioa = 0;
+        }
+      }else{
+        $("#other-akomodasi").empty();
+        ioa = 0;
+      }
+      return ioa;
+    };
+    //Add Textbox other End
 
     </script>
 

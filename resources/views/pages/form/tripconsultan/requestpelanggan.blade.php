@@ -6,11 +6,9 @@
   <div class="card-group">
     <div class="card">
       <div class="card-header bg-success text-white"><h3>Formulir Request Pelanggan</h3></div>
-
     </div>
   </div>
   <hr>
-
   <div class="card text-white bg-primary mb-3">
   <div class="card-header"><h5><span><b>A. Identitas Pelanggan<b><span><h5></div>
   <div class="card-body">
@@ -68,7 +66,6 @@
           </div>
         </div>
       </div>
-
   </div>
 </div>
 <div class="card text-white bg-danger mb-3">
@@ -120,11 +117,20 @@
           <div class="row">
             <div class="col">
               <select class="select2-akomodasi js-states form-control" multiple="multiple" style="width: 100%;">
-                <option>Hotel</option>
-                <option>Resort</option>
-                <option>Cottage</option>
-                <option>Other</option>
+                <option value="1">Hotel</option>
+                <option value="2">Resort</option>
+                <option value="3">Cottage</option>
+                <option value="4">Other</option>
               </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col" id="other-akomodasi">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <input type="text" class="form-control" id="oa" placeholder="Tujuan Wisata">
             </div>
           </div>
       </div>
