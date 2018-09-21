@@ -206,7 +206,6 @@
         if(count != 1){
           var text_akomodasi = document.createElement("INPUT");
           $("#other-akomodasi").append(text_akomodasi);     // Append new elements
-          alert(count);
           ioa = 0;
         }
       }else{
